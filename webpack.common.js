@@ -54,6 +54,24 @@ module.exports = {
         ]
       },
       {
+        test: /\.less$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+              modules: true
+            }
+          },
+          {
+            loader: "less-loader"
+          }
+        ]
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/,
         loader: "url-loader"
       }

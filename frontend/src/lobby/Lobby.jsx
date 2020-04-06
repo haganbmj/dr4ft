@@ -10,6 +10,8 @@ import CreatePanel from "./CreatePanel";
 import FileUpload from "./FileUpload";
 import Version from "./Version";
 
+import style from "./lobby.less";
+
 export default class Lobby extends Component {
 
   constructor(props) {
